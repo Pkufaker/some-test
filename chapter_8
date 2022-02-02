@@ -1,0 +1,15 @@
+#include<iostream>
+#include<exception>
+
+int main()
+{
+	int total=0;
+	char input;
+	while(std::cin.peek()!='$'&& !std::cin.eof())
+	{
+		input=std::cin.get();
+		total++;
+	}
+	std::cout<<"total number before$"<<total<<std::endl;
+	return 0;
+}
